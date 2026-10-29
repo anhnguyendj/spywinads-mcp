@@ -1,0 +1,42 @@
+<evaluation>
+   <qa_pair>
+      <question>For the Facebook ad 1014622548199238, on what date was its video file first uploaded to Facebook? Answer YYYY-MM-DD.</question>
+      <answer>2026-07-25</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>For the Facebook ad 1014622548199238, how many days passed between the video file upload and the first ad? Answer a number.</question>
+      <answer>19</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>Which store ran ad 1014622548199238's video earliest in the SpyWinAds library? Answer the domain.</question>
+      <answer>zenblux.com</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>Find the earliest store for ad 1014622548199238's video, then give that store's first ad date in the library (YYYY-MM-DD).</question>
+      <answer>2026-07-29</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>What is the name of the Facebook Page https://www.facebook.com/61553397207581/ in the SpyWinAds library?</question>
+      <answer>Beyonddraw.ND02</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>On what date did the Facebook Page 61553397207581 run its first ad in the SpyWinAds library? Answer YYYY-MM-DD.</question>
+      <answer>2026-07-08</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>In the SpyWinAds Video Reuse Index, what percent of videos were uploaded 30+ days before their first ad? Number only.</question>
+      <answer>12.8</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>In the Video Reuse Index, what percent of ads belong to videos run by 5 or more stores? Number only.</question>
+      <answer>74.1</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>In the Video Reuse Index, what is the median number of days from the first store to the fifth store? Number only.</question>
+      <answer>18</answer>
+   </qa_pair>
+   <qa_pair>
+      <question>How many ad videos with a file date does the October 2026 Video Reuse Index cover? Answer digits only, no commas.</question>
+      <answer>79846</answer>
+   </qa_pair>
+</evaluation>
