@@ -18,7 +18,7 @@
         "displayName": "SpyWinAds",
         "shortDescription": "Facebook video ad research",
         "longDescription": "SpyWinAds helps online sellers investigate Facebook video ads. Give it a Meta Ad Library link, a store domain or a Facebook Page and it returns when the video file was first uploaded to Facebook (within 1–2 days), when its first ad started, how many stores run the same video now and ever, and the earliest stores in the SpyWinAds library. It can also export a public Shopify product to a CSV you can import.\n\nData covers Meta ads shown in the US, from the SpyWinAds library. Counts are minimums of ads observed, not sales; there is no ad spend, reach, order or revenue data. \"Earliest store\" means earliest in the library, not the verified owner of the video. All tools are read-only. The research tool works without an account; the other tools need a free SpyWinAds account (30 calls a day).",
-        "developerName": "ATT ECOMMERCE COMPANY LIMITED",
+        "developerName": "SpyWinAds",
         "category": "Business",
         "capabilities": [
           "Find when a Facebook video ad's file was first uploaded",
