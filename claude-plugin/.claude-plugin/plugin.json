@@ -19,5 +19,8 @@
     "ad research",
     "ecommerce"
   ],
-  "privacyPolicyUrl": "https://spywinads.com/privacy"
+  "privacyPolicyUrl": "https://spywinads.com/privacy",
+  "termsOfServiceUrl": "https://spywinads.com/terms",
+  "documentationUrl": "https://spywinads.com/developers",
+  "supportUrl": "https://spywinads.com/developers"
 }
