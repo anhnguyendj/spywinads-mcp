@@ -67,7 +67,9 @@ page the user gives (blocked from private and internal addresses).
 
 ## Test account for reviewers
 
-A SpyWinAds account with the API enabled (create one per directory, keep credentials in 1Password, never in this repo).
+- **Email:** `app-review@spywinads.com` (internal plan, no daily limit, API and MCP on). Password: 1Password vault `SpyWin VPS`, item "SpyWinAds app reviewer (Claude/ChatGPT)". Never commit it.
+- **Steps for the reviewer:** add `https://spywinads.com/mcp` → when a tool asks, sign in with the email + password above → click **Allow**.
+- No 2FA, no email code at sign-in.
 
 ## Commerce (ChatGPT)
 
