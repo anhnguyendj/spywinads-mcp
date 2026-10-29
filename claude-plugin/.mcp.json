@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "spywinads": {
+      "type": "http",
+      "url": "https://spywinads.com/mcp"
+    }
+  }
+}

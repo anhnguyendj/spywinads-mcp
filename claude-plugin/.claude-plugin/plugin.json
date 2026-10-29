@@ -1,0 +1,23 @@
+{
+  "name": "spywinads",
+  "displayName": "SpyWinAds",
+  "version": "1.0.0",
+  "description": "Check Facebook video ads before you test a product: how old a video ad really is, how many stores run the same video, and what a competitor store is running.",
+  "author": {
+    "name": "SpyWinAds",
+    "email": "support@spywinads.com",
+    "url": "https://spywinads.com"
+  },
+  "homepage": "https://spywinads.com/developers",
+  "repository": "https://github.com/anhnguyendj/spywinads-mcp",
+  "license": "MIT",
+  "keywords": [
+    "facebook ads",
+    "ad library",
+    "dropshipping",
+    "shopify",
+    "ad research",
+    "ecommerce"
+  ],
+  "privacyPolicyUrl": "https://spywinads.com/privacy"
+}
