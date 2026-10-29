@@ -25,7 +25,7 @@ All tools are annotated `readOnlyHint: true`, `destructiveHint: false`. Scopes: 
 
 ## Connect
 
-**ChatGPT** — Settings → Apps & Connectors → Create → paste `https://spywinads.com/mcp`. When a tool needs your account, ChatGPT asks you to sign in to SpyWinAds and click Allow.
+**ChatGPT** — open **Plugins** in the left sidebar → **More** (top right) → **Add custom MCP server** → paste `https://spywinads.com/mcp`. When a tool needs your account, ChatGPT asks you to sign in to SpyWinAds and click Allow.
 
 **Claude.ai / Claude Desktop** — Customize → Connectors → Add custom connector → paste `https://spywinads.com/mcp` → choose **Sign in when needed**.
 
