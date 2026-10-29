@@ -1,0 +1,103 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "spywinads",
+  "version": "1.0.0",
+  "description": "Check Facebook video ads: how old a video ad really is, and every store running the same video.",
+  "author": {
+    "name": "ATT ECOMMERCE COMPANY LIMITED",
+    "email": "support@spywinads.com",
+    "url": "https://spywinads.com"
+  },
+  "homepage": "https://spywinads.com/developers",
+  "repository": "https://github.com/anhnguyendj/spywinads-mcp",
+  "license": "MIT",
+  "keywords": ["facebook ads", "ad library", "dropshipping", "shopify", "ad research"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SpyWinAds",
+        "shortDescription": "Facebook video ad research",
+        "longDescription": "SpyWinAds helps online sellers investigate Facebook video ads. Give it a Meta Ad Library link, a store domain or a Facebook Page and it returns when the video file was first uploaded to Facebook (within 1–2 days), when its first ad started, how many stores run the same video now and ever, and the earliest stores in the SpyWinAds library. It can also export a public Shopify product to a CSV you can import.\n\nData covers Meta ads shown in the US, from the SpyWinAds library. Counts are minimums of ads observed, not sales; there is no ad spend, reach, order or revenue data. \"Earliest store\" means earliest in the library, not the verified owner of the video. All tools are read-only. The research tool works without an account; the other tools need a free SpyWinAds account (30 calls a day).",
+        "developerName": "ATT ECOMMERCE COMPANY LIMITED",
+        "category": "Business",
+        "capabilities": [
+          "Find when a Facebook video ad's file was first uploaded",
+          "Count stores running the same video ad",
+          "Show a store's Facebook video ads",
+          "Show a Facebook Page's ads and linked stores",
+          "Export a public Shopify product to CSV"
+        ],
+        "websiteURL": "https://spywinads.com",
+        "supportURL": "https://spywinads.com/developers",
+        "privacyPolicyURL": "https://spywinads.com/privacy",
+        "termsOfServiceURL": "https://spywinads.com/terms",
+        "defaultPrompt": [
+          "Is this video ad new or an old video brought back? https://www.facebook.com/ads/library/?id=1014622548199238",
+          "What Facebook video ads is zenblux.com running, and how many stores use the same videos?",
+          "How often are old videos reused in Facebook ads?"
+        ],
+        "brandColor": "#E5484D",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": ["./assets/store-report.png", "./assets/consent.png"]
+      },
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Look up a video ad's real age",
+              "prompt": "Is this video ad new or an old video brought back? https://www.facebook.com/ads/library/?id=1014622548199238",
+              "tools_triggered": "spywin_lookup_video_ad",
+              "expected_behavior": "Says the video file was first uploaded to Facebook around 2026-07-25, the first ad started about 19 days later, and the earliest store in the library is zenblux.com. Counts are described as minimums, not sales."
+            },
+            {
+              "description": "Spy on a store's video ads",
+              "prompt": "What Facebook video ads is zenblux.com running, and how many other stores use the same videos?",
+              "tools_triggered": "spywin_spy_store_ads",
+              "expected_behavior": "Returns zenblux.com's live ads, new ads in 7 days, top videos with their real age and how many stores run each video, from the SpyWinAds library."
+            },
+            {
+              "description": "Look up a Facebook Page",
+              "prompt": "Which stores does the Facebook Page https://www.facebook.com/61553397207581/ send traffic to, and when did it start advertising?",
+              "tools_triggered": "spywin_get_page_ads",
+              "expected_behavior": "Names the Page Beyonddraw.ND02, gives its first ad date in the library (2026-07-08), its ads and videos, and the stores it links to."
+            },
+            {
+              "description": "Export a Shopify product",
+              "prompt": "Copy this Shopify product into a CSV I can import: https://www.allbirds.com/products/mens-tree-runners",
+              "tools_triggered": "spywin_export_shopify_product",
+              "expected_behavior": "Returns the product title, prices, variants and images, plus a download link to a Shopify-import CSV that works for 24 hours."
+            },
+            {
+              "description": "Read the public research without signing in",
+              "prompt": "According to SpyWinAds research, how often are old videos reused in Facebook ads?",
+              "tools_triggered": "spywin_get_video_reuse_research",
+              "expected_behavior": "Without asking the user to sign in, reports the Video Reuse Index headline numbers: 12.8% of videos were uploaded 30+ days before their first ad, videos run by 5+ stores hold 74.1% of ads, and the median from the first to the fifth store is 18 days, with links to the method."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Running or changing ads is not supported",
+              "prompt": "Pause my Facebook ad campaigns and raise the budget on the best one."
+            },
+            {
+              "description": "Revenue and sales are not in the data",
+              "prompt": "How much money does zenblux.com make each month from its Facebook ads?"
+            },
+            {
+              "description": "Unrelated request",
+              "prompt": "Write a short poem about autumn leaves."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "SpyWinAds does not sell products or process payments inside ChatGPT. Limit messages only state the daily limit and when it resets."
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "Initial release: 5 read-only tools for Facebook video ad research and Shopify product export."
+      }
+    }
+  }
+}
