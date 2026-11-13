@@ -7,7 +7,7 @@ Check Facebook video ads from ChatGPT, Claude, Cursor or your own scripts: how o
 - **Remote server:** `https://spywinads.com/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1 (sign in with your SpyWinAds account), or an API key in the `Authorization` header
 - **Read-only.** 5 tools. Free plan: 30 calls a day.
-- Docs: [spywinads.com/developers](https://spywinads.com/developers)
+- Docs: [spywinads.com/developers](https://spywinads.com/developers?utm_source=github&utm_medium=readme&utm_campaign=mcp-repo)
 
 This repository only documents the hosted server. There is nothing to install.
 
@@ -82,7 +82,7 @@ OpenAPI: `https://spywinads.com/api/v1/openapi.json`. Errors are `application/pr
 
 - OAuth 2.1 with PKCE (S256), protected resource metadata (RFC 9728) at `/.well-known/oauth-protected-resource/mcp`, authorization server metadata (RFC 8414), dynamic client registration and client ID metadata documents. Access tokens last 1 hour; refresh tokens rotate.
 - Tokens and keys are stored only as SHA-256 hashes. Tokens are bound to `https://spywinads.com/mcp`.
-- We log the tool name, success or error and the calling app, not your prompts. Privacy policy: [spywinads.com/privacy](https://spywinads.com/privacy).
+- We log the tool name, success or error and the calling app, not your prompts. Privacy policy: [spywinads.com/privacy](https://spywinads.com/privacy?utm_source=github&utm_medium=readme&utm_campaign=mcp-repo).
 
 ## Support
 
