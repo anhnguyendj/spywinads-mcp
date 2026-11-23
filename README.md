@@ -11,6 +11,9 @@ Check Facebook video ads from ChatGPT, Claude, Cursor or your own scripts: how o
 
 This repository only documents the hosted server. There is nothing to install.
 
+<p align="center"><img src="assets/ask-claude.gif" width="720" alt="Asking Claude how old a Facebook video ad is. SpyWinAds returns 21 days, first ad on 02/11 and the 5 stores running it."></p>
+<p align="center"><sub>A real answer in Claude (question asked in Vietnamese): the video's real age, the first ad date and every store running it.</sub></p>
+
 ## Tools
 
 | Tool | Input | Returns |
