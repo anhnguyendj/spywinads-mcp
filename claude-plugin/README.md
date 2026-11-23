@@ -15,7 +15,7 @@ The research tool works without an account. The other tools ask you to sign in t
 
 ## What the plugin sends and stores
 
-The plugin itself runs no code and makes no network calls of its own. Claude calls the SpyWinAds server above when a skill or your question needs data. The server reads SpyWinAds' own database; the only outside fetch is the public Shopify product page you ask it to copy. SpyWinAds logs the tool name, success or error and the calling app, not your prompts. Privacy policy: https://spywinads.com/privacy
+The plugin itself runs no code and makes no network calls of its own. Claude calls the SpyWinAds server above when a skill or your question needs data. The server reads SpyWinAds' own database; the only outside fetch is the public Shopify product page you ask it to copy. SpyWinAds logs the tool name, success or error and the calling app, not your prompts. Privacy policy: [spywinads.com/privacy](https://spywinads.com/privacy?utm_source=github&utm_medium=readme&utm_campaign=mcp-plugin)
 
 ## Data limits
 
@@ -27,4 +27,4 @@ Meta ads shown in the US, from the SpyWinAds library. Counts are minimums of ads
 - "What Facebook video ads is zenblux.com running, and which videos are copied by other stores?"
 - "Copy this Shopify product into a CSV I can import: https://www.allbirds.com/products/mens-tree-runners"
 
-Docs: https://spywinads.com/developers · Support: support@spywinads.com · Publisher: ATT ECOMMERCE COMPANY LIMITED, Hanoi, Vietnam
+Docs: [spywinads.com/developers](https://spywinads.com/developers?utm_source=github&utm_medium=readme&utm_campaign=mcp-plugin) · Support: support@spywinads.com · Publisher: ATT ECOMMERCE COMPANY LIMITED, Hanoi, Vietnam
